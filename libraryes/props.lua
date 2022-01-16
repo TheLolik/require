@@ -1,5 +1,5 @@
 local props = {}
-props["gethiddenproperties"] = function(obj)
+props["getproperties"] = function(obj)
 	local t = {}
 	for prop,val in pairs(getproperties(obj)) do
 		table.insert(t, prop)
