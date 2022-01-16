@@ -110,7 +110,6 @@ files["copyfile"] = function(path)
 		local name = nt[#nt - 1] .. " - copy"
 		local f = nt[1]..nt[2]
 		local pwn = string.gsub(path,f,"")
-		print(pwn)
 		writefile(pwn..name..nt[#nt], readfile(path))
 	end
 end
